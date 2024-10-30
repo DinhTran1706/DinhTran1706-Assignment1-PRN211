@@ -56,11 +56,12 @@ namespace Candidate_DAOs
         public bool DeleteCandidateProfile(string id)
         {
             bool isSuccess = false;
+            using var context = new CandidateManagementContext();
             CandidateProfile candidate = GetCandidateProfile(id);
             if(candidate != null)
             {
-                dbContext.CandidateProfiles.Remove(candidate);
-                dbContext.SaveChanges();
+                context.CandidateProfiles.Remove(candidate);
+                context.SaveChanges();
                 isSuccess = true;
             }
             return isSuccess;

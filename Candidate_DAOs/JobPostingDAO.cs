@@ -52,11 +52,12 @@ namespace Candidate_DAOs
         public bool DeleteJobPostings(string id)
         {
             bool isSuccess = false;
+            using var context = new CandidateManagementContext();
             JobPosting job = GetJobPosting(id);
             if( job != null)
             {
-                dbContext.JobPostings.Remove(job);
-                dbContext.SaveChanges() ;
+                context.JobPostings.Remove(job);
+                context.SaveChanges() ;
                 isSuccess = true;
             }
             return isSuccess ;
@@ -65,12 +66,13 @@ namespace Candidate_DAOs
         public bool UpdateJobPostings(JobPosting jobPosting)
         {
             bool isSuccess = false;
+            using var context = new CandidateManagementContext();
             JobPosting job = GetJobPosting(jobPosting.PostingId);
             if(job != null)
             {
-                dbContext.Entry<JobPosting>(jobPosting).State 
+                context.Entry<JobPosting>(jobPosting).State 
                     = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                dbContext.SaveChanges() ;
+                context.SaveChanges() ;
                 isSuccess = true;
             }
             return isSuccess ;
