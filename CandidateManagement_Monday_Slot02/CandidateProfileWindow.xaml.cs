@@ -34,12 +34,13 @@ namespace CandidateManagement_Monday_Slot02
                 case 1:
                     break;
                 case 2:
-                    //Manager
+                    //Managers
                     this.btnAdd.IsEnabled = false;
                     this.btnDelete.IsEnabled = false;
                     this.btnUpdate.IsEnabled = false;
                     break;
                 case 3:
+                    //Employees
                     this.btnAdd.IsEnabled = false;
                     this.btnDelete.IsEnabled = false;
                     this.btnUpdate.IsEnabled = false;

@@ -50,6 +50,9 @@ namespace CandidateManagement_Monday_Slot02
                 case 2:
                     break;
                 case 3:
+                    this.btnAdd.IsEnabled = false;
+                    this.btnDelete.IsEnabled = false;
+                    this.btnUpdate.IsEnabled = false;
                     break;
                 default:
                     break;
@@ -122,7 +125,7 @@ namespace CandidateManagement_Monday_Slot02
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             string id = txtPostID.Text;
-            if(!string.IsNullOrEmpty(id) && jobPostingService.GetJobPosting(id) != null)
+            if(!string.IsNullOrEmpty(id) && jobPostingService.DeleteJobPosting(id))
             {
                 this.LoadDataInit();
                 MessageBox.Show("Delete Successfully");
@@ -131,6 +134,13 @@ namespace CandidateManagement_Monday_Slot02
             {
                 MessageBox.Show("Something goes wrong");
             }
+        }
+
+        private void btnCandidateProfile_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            CandidateProfileWindow candidateProfileWindow = new CandidateProfileWindow();
+            candidateProfileWindow.Show();
         }
     }
 }

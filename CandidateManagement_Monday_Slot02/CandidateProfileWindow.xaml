@@ -31,7 +31,7 @@
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Height="58" Margin="255,526,0,0" VerticalAlignment="Top" Width="191" Background="#FFAFD413" FontWeight="Bold" IsCancel="True" FontSize="20" Grid.ColumnSpan="2" Click="btnUpdate_Click"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Height="58" Margin="214,526,0,0" VerticalAlignment="Top" Width="198" FontWeight="Bold" Background="#FFDF931A" Click="btnDelete_Click" IsCancel="True" FontSize="20" Grid.Column="1"/>
         <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="58" Margin="18,526,0,0" VerticalAlignment="Top" Width="189" FontWeight="Bold" Background="#FF16D1D1" IsCancel="True" FontSize="20" Grid.Column="2" Click="btnClose_Click"/>
-        <Button x:Name="btnJobPosting" Grid.Column="2" Content="Go to Job Postings Page" HorizontalAlignment="Left" Height="65" Margin="18,615,0,0" VerticalAlignment="Top" Width="189"/>
+        <Button x:Name="btnJobPosting" Grid.Column="2" Content="Go to Job Postings Page" HorizontalAlignment="Left" Height="65" Margin="18,615,0,0" VerticalAlignment="Top" Width="189" Click="btnJobPosting_Click"/>
 
     </Grid>
 </Window>
