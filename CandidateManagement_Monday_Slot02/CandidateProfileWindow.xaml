@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:CandidateManagement_Monday_Slot02"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="CandidateProfileManagement" Height="700" Width="914" WindowStartupLocation="CenterScreen">
+        Title="CandidateProfileManagement" 
+        Height="700" 
+        Width="914" 
+        WindowStartupLocation="CenterScreen"
+        Background="Bisque">
     <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="131*"/>
@@ -31,7 +35,6 @@
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Height="58" Margin="255,526,0,0" VerticalAlignment="Top" Width="191" Background="#FFAFD413" FontWeight="Bold" IsCancel="True" FontSize="20" Grid.ColumnSpan="2" Click="btnUpdate_Click"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Height="58" Margin="214,526,0,0" VerticalAlignment="Top" Width="198" FontWeight="Bold" Background="#FFDF931A" Click="btnDelete_Click" IsCancel="True" FontSize="20" Grid.Column="1"/>
         <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="58" Margin="18,526,0,0" VerticalAlignment="Top" Width="189" FontWeight="Bold" Background="#FF16D1D1" IsCancel="True" FontSize="20" Grid.Column="2" Click="btnClose_Click"/>
-        <Button x:Name="btnJobPosting" Grid.Column="2" Content="Go to Job Postings Page" HorizontalAlignment="Left" Height="65" Margin="18,615,0,0" VerticalAlignment="Top" Width="189" Click="btnJobPosting_Click"/>
-
+        <Button x:Name="btnJobPosting" Grid.Column="1" Content="Go to Job Postings Page" HorizontalAlignment="Left" Height="65" Margin="380,615,0,0" VerticalAlignment="Top" Width="243" Click="btnJobPosting_Click" Background="#FFF036F3" FontSize="20" Grid.ColumnSpan="2" FontWeight="Bold"/>
     </Grid>
 </Window>

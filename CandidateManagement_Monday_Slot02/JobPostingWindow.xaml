@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:CandidateManagement_Monday_Slot02"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="JobPostingWindow" Height="700" Width="914" WindowStartupLocation="CenterScreen">
+        Title="JobPostingWindow" Height="700" Width="914" WindowStartupLocation="CenterScreen"
+        Background="#FF899FF4">
+        
     <Grid>
         <Label Content="JOB POSTING MANAGEMENT" HorizontalAlignment="Left" Height="50" Margin="250,21,0,0" VerticalAlignment="Top" Width="434" FontSize="30" FontWeight="Bold"/>
         <Label Content="Posting ID" HorizontalAlignment="Left" Height="30" Margin="23,80,0,0" VerticalAlignment="Top" Width="99" FontSize="18"/>
@@ -22,7 +24,6 @@
         <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="68" Margin="673,521,0,0" VerticalAlignment="Top" Width="217" FontWeight="Bold" Background="#FF0ADFDF" FontSize="20" Click="btnClose_Click"/>
         <Label Content="Posted Date" HorizontalAlignment="Left" Height="33" Margin="26,218,0,0" VerticalAlignment="Top" Width="111" FontSize="18"/>
         <DatePicker x:Name="dpDate" HorizontalAlignment="Left" Height="33" Margin="142,218,0,0" VerticalAlignment="Top" Width="315" FontSize="18"/>
-        <Button x:Name="btnCandidateProfile" Content="Return to Candidate Profile Window" HorizontalAlignment="Left" Height="58" Margin="673,616,0,0" VerticalAlignment="Top" Width="217" Click="btnCandidateProfile_Click"/>
-
+        <Button x:Name="btnCandidateProfile" Content="Return to Candidate Profile Window" HorizontalAlignment="Left" Height="58" Margin="532,616,0,0" VerticalAlignment="Top" Width="358" Click="btnCandidateProfile_Click" FontSize="20" FontWeight="Bold" Background="#FFED58E9"/>
     </Grid>
 </Window>
