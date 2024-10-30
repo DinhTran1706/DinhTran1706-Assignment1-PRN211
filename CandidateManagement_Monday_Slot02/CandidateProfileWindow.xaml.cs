@@ -141,7 +141,7 @@ namespace CandidateManagement_Monday_Slot02
         private void btnJobPosting_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            JobPostingWindow jobPosting = new JobPostingWindow();
+            JobPostingWindow jobPosting = new JobPostingWindow(RoleID);
             jobPosting.Show();
         }
 

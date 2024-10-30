@@ -140,7 +140,7 @@ namespace CandidateManagement_Monday_Slot02
         private void btnCandidateProfile_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            CandidateProfileWindow candidateProfileWindow = new CandidateProfileWindow();
+            CandidateProfileWindow candidateProfileWindow = new CandidateProfileWindow(RoleID);
             candidateProfileWindow.Show();
         }
     }
