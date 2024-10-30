@@ -23,6 +23,7 @@ namespace CandidateManagement_Monday_Slot02
     {
         private readonly IJobPostingService jobPostingService;
         private readonly int? RoleID;
+
         public JobPostingWindow()
         {
             InitializeComponent();
@@ -41,7 +42,7 @@ namespace CandidateManagement_Monday_Slot02
             dgJobPosting.ItemsSource = jobPostingService.GetJobPostings().ToList();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded_Job(object sender, RoutedEventArgs e)
         {
             switch (RoleID)
             {

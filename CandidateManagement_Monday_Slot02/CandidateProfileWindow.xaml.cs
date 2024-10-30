@@ -27,20 +27,20 @@ namespace CandidateManagement_Monday_Slot02
             this.RoleID = roleID;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded_Candidate(object sender, RoutedEventArgs e)
         {
             switch (RoleID)
             {
                 case 1:
                     break;
                 case 2:
-                    //Managers
+                    //Manager
                     this.btnAdd.IsEnabled = false;
                     this.btnDelete.IsEnabled = false;
                     this.btnUpdate.IsEnabled = false;
                     break;
                 case 3:
-                    //Employees
+                    //Staff
                     this.btnAdd.IsEnabled = false;
                     this.btnDelete.IsEnabled = false;
                     this.btnUpdate.IsEnabled = false;
@@ -143,6 +143,13 @@ namespace CandidateManagement_Monday_Slot02
             this.Hide();
             JobPostingWindow jobPosting = new JobPostingWindow();
             jobPosting.Show();
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
         }
     }
 }

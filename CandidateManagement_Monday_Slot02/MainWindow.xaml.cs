@@ -33,10 +33,13 @@ namespace CandidateManagement_Monday_Slot02
                         break;
                     case 2:
                         this.Hide();
-                        CandidateProfileWindow staffCandidate = new CandidateProfileWindow(roleID);
-                        staffCandidate.Show();
+                        CandidateProfileWindow managerCandidate = new CandidateProfileWindow(roleID);
+                        managerCandidate.Show();
                         break;
                     case 3: 
+                        this.Hide();
+                        CandidateProfileWindow staffCandidate = new CandidateProfileWindow(roleID);
+                        staffCandidate.Show();
                         break;
                     default: 
                         break;
